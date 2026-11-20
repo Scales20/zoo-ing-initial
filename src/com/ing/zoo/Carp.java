@@ -27,9 +27,9 @@ public class Carp {
         int rnd = random.nextInt(2);
         if (rnd == 0)
         {
-            trick = "swim through an obstacle course of seven hoops";
+            trick = "swims through an obstacle course of seven hoops";
         } else {
-            trick = "retrieve an object from the bottom of the aquarium and present it to the keeper";
+            trick = "retrieves an object from the bottom of the aquarium and presents it to the keeper";
         }
         System.out.println(trick);
     }

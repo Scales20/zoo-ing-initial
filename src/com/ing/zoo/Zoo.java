@@ -175,5 +175,7 @@ public class Zoo {
                     System.out.println("Unknown command and/or name: " + input);
             }
         }
+
+        scanner.close();
     }
 }

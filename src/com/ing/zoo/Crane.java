@@ -38,7 +38,7 @@ public class Crane {
             trick = "plucks thrown berries out of the air";
         } else 
         {
-            trick = "retrieve toy from bottom of a puddle";
+            trick = "retrieves toy from bottom of a puddle";
         }
         System.out.println(trick);
     }

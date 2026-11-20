@@ -1,7 +1,5 @@
 package com.ing.zoo;
 
-import java.util.Random;
-
 public class Zebra {
     public String name;
     public String helloText;
