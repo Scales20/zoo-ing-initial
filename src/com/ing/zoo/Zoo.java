@@ -21,6 +21,10 @@ public class Zoo {
         wally.name = "wally";
         Zebra marty = new Zebra();
         marty.name = "marty";
+        Crane karen = new Crane();
+        karen.name = "karen";
+        Carp john = new Carp();
+        john.name = "john";
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Voer uw command in: ");
@@ -99,10 +103,77 @@ public class Zoo {
                     marty.eatLeaves();
                     break;
                 default:
-                System.out.print("Marty cannot do this.");   
+                    System.out.print("Marty cannot do this.");   
             }
-        } else {
-            System.out.println("Unknown name: " + input);
+        } else if (input.contains("karen")) {
+            String[] splitString = input.split(" karen");
+            String command = splitString[0];
+            switch (command) {
+                case "hello":
+                    karen.sayHello();
+                    break;
+                case "give leaves":
+                    karen.eatLeaves();
+                    break;
+                case "give meat":
+                    karen.eatMeat();
+                    break;
+                case "perform trick":
+                    karen.performTrick();
+                    break;
+                default:
+                    System.out.print("Karen cannot do this."); 
+            }
+        } else if (input.contains("john")) {
+            String[] splitString = input.split(" john");
+            String command = splitString[0];
+            switch (command) {
+                case "hello":
+                    john.sayHello();
+                    break;
+                case "give leaves":
+                    john.eatLeaves();
+                    break;
+                case "perform trick":
+                    john.performTrick();
+                    break;
+                default:
+                    System.out.print("John cannot do this."); 
+            }
+        }
+        else {
+            switch (input) {
+                case "hello":
+                    henk.sayHello();
+                    elsa.sayHello();
+                    dora.sayHello();
+                    wally.sayHello();
+                    marty.sayHello();
+                    karen.sayHello();
+                    john.sayHello();
+                    break;
+                case "give leaves":
+                    elsa.eatLeaves();
+                    dora.eatLeaves();
+                    marty.eatLeaves();
+                    karen.eatLeaves();
+                    john.eatLeaves();
+                    break;
+                case "give meat":
+                    henk.eatMeat();
+                    dora.eatMeat();
+                    wally.eatMeat();
+                    karen.eatMeat();
+                    break;
+                case "perform trick":
+                    dora.performTrick();
+                    wally.performTrick();
+                    karen.performTrick();
+                    john.performTrick();
+                    break;
+                default:
+                    System.out.println("Unknown command and/or name: " + input);
+            }
         }
     }
 }
