@@ -31,6 +31,11 @@ public class Zoo {
 
         String input = scanner.nextLine();
 
+        // Determine which input to use.
+        // If the name of one of the animals is used, determine what the command is, and then execute it, if it exists for the animal.
+        // If not, show that that can't be done.
+        // If no name is used, let all animals who can do the command execute it.
+        // If the name is not recognised, or if the input is malformed in some other way, inform the user of that.
         if (input.contains("henk")) {
             String[] splitString = input.split(" henk");
             String command = splitString[0];

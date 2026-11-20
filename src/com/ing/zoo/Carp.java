@@ -12,17 +12,20 @@ public class Carp {
     {
     }
 
-    public void sayHello() {
+    public void sayHello() 
+    {
         helloText = "blub blub blub";
         System.out.println(helloText);
     }
 
-    public void eatLeaves() {
+    public void eatLeaves() 
+    {
         eatText = "small splash";
         System.out.println(eatText);
     }
 
-    public void performTrick() {
+    public void performTrick() 
+    {
         Random random = new Random();
         int rnd = random.nextInt(2);
         if (rnd == 0)

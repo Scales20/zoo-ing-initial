@@ -12,22 +12,26 @@ public class Crane {
     {
     }
 
-    public void sayHello() {
+    public void sayHello() 
+    {
         helloText = "flap flap";
         System.out.println(helloText);
     }
 
-    public void eatLeaves() {
+    public void eatLeaves() 
+    {
         eatText = "silently eats leaves";
         System.out.println(eatText);
     }
 
-    public void eatMeat() {
+    public void eatMeat() 
+    {
         eatText = "gulp";
         System.out.println(eatText);
     }
 
-    public void performTrick() {
+    public void performTrick() 
+    {
         Random random = new Random();
         int rnd = random.nextInt(3);
         if (rnd == 0)
